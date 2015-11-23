@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main ()
+{
+	int n,p,s,resposta;	
+	n=1000; 				//define o valor inicial para contar numeros com apenas 4 algarismos
+	for (n;n<9999;n++)
+	{
+		p=n/100;            //separa o primeiro numero 
+		s=n%100;            //separa o segundo numero
+		resposta=p+s;       //soma os valores 
+		resposta=resposta*resposta;     //eleva a soma ao quadrado
+		if (n==resposta)              //verfica se tem a caracteristica
+			printf ("\n%d", n);       //caso sim mostra
+	}
+	return 0;
+}
