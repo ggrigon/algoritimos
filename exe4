@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+	int vet[15],i,s,x;
+	x=0;
+	i=0;
+	while (i<15){
+		scanf ("%d", &vet[i]);
+		if (i<7){
+			s=s+vet[i];
+		}
+		i++;
+	}
+	i=7;
+	while (i<15){
+		x=x+vet[i];
+		i++;
+	}
+	if (x==s){
+		printf ("\nE Palindrmo  ");
+	}
+	else
+	{
+		printf ("\nNao e Palindrmo  ");
+	}
+     i=0;
+     j=15
+    while (i<15){
+    	printf ("%d  ", vet[i]);
+    	i++;
+	}
+	return 0;
+}
