@@ -1,0 +1,30 @@
+#include<stdio.h> 
+#include<stdlib.h> 
+
+
+int main () 
+{ 
+int soma,i,j,n; 
+
+printf ("Digite um limite");
+printf ("\n");
+scanf ("\n%d",&n);
+i=1;
+for (i;i<n;i++) //perocorre ate o limite
+{ 
+    soma=0;
+	j=1; 
+    for (j;j<=i;j++)
+    {
+      if (i%j==0)  
+      soma=soma+j; //soma os numeros divisiveis
+	} 
+  if (soma==2*i) //verifica se Ã© perfeito
+  {
+  printf("\n%d " ,i); 
+  }
+}
+		printf ("\n========fim do programa==========");
+
+	return 0;
+}
