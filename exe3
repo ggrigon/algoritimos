@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main ()
+{ 
+    int  voto,valibaba,contagem,votoalcapone,votoalibaba,votonulo;
+    votoalibaba=0;
+    votoalcapone=0;
+    printf ("insira seu voto:");
+    for (contagem=1;contagem<10;contagem++){
+    	printf ("\n");
+        scanf ("%d", &voto);
+        if (voto==83)
+        {
+            votoalibaba++;
+            printf("\nparabens voto computatado voce votou em alibaba:");
+            printf("\n");
+            printf("\ninsira seu voto");
+        }
+        if (voto==93)
+        {
+            votoalcapone++;
+            printf("\nparabens voto computatado voce votou em alcapone:");
+            printf("\n");
+            printf("\ninsira seu voto");
+        }
+        if (voto==0){
+        	printf ("\nvoce votou em branco:");
+        	votonulo++;
+		}
+    }
+        if (votoalibaba > votoalcapone){
+        	printf ("\n_____________________");
+        	printf ("\nfim da votacao");
+            printf ("\n!!!alibaba ganhou!!!");
+            printf ("\n_____________________");
+            printf ("\ncontagem:   ");
+            printf ("\nalibaba %d  ", votoalibaba);
+			printf ("\nalcapone %d  ", votoalcapone);
+			printf ("\nvotos em branco %d  ", votonulo); 
+        }
+        else{
+        	printf ("\n_____________________");
+        	printf ("\nfim da votacao");
+            printf ("\n!!!alcapone ganhou!!!");
+            printf ("\n_____________________");
+            printf ("\ncontagem:   ");
+            printf ("\nalibaba %d  ", votoalibaba);
+			printf ("\nalcapone %d  ", votoalcapone);
+			printf ("\nvotos em branco %d  ", votonulo); 
+    } 
+    return 0;
+}
