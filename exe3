@@ -11,22 +11,62 @@ int main ()
         scanf ("%d", &voto);
         if (voto==83)
         {
-            votoalibaba++;
+        	if (voto==83){
+        		printf ("\ndigite novamente seu voto para confirmar");
+        		printf ("\n");
+        		scanf ("\n%d", &voto);
+			}
+			else 
+			{
+				printf ("\nvoto nao computado");
+			}
+			if (voto==83)
+			{
+			votoalibaba++;
             printf("\nparabens voto computatado voce votou em alibaba:");
+            printf ("\n====================novo voto================");
             printf("\n");
+			}
             printf("\ninsira seu voto");
         }
         if (voto==93)
         {
+        	if (voto==93){
+        		printf ("\ndigite novamente seu voto para confirmar");
+        		printf ("\n");
+        		scanf ("\n%d", &voto);
+			}
+			else 
+			{
+				printf ("\nvoto nao computado");
+				votoalcapone--;
+			}
             votoalcapone++;
             printf("\nparabens voto computatado voce votou em alcapone:");
+            printf ("\n====================novo voto================");
             printf("\n");
             printf("\ninsira seu voto");
         }
-        if (voto==0){
-        	printf ("\nvoce votou em branco:");
+        if (voto == 0)
+		{
+        	printf ("\ndigite novamente para confirmar seu voto");
+        	printf ("\n");
+			scanf ("%d", &voto);
+			if (voto == 0)
+			{
+				printf ("\nvoto nulo computado");
+		 		printf ("\n====================novo voto================");
+			}
+			else
+			{
+				printf ("\nvoto nulo nao computado");
+				printf ("\n________");
+				printf	("\ninsira seu voto");
+				votonulo--;
+			}	
+        
         	votonulo++;
-		}
+		} 
     }
         if (votoalibaba > votoalcapone){
         	printf ("\n_____________________");
