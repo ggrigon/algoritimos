@@ -1,0 +1,28 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int main() 
+{
+
+ 	int n,v,v1,v2,vtemp,soma;
+ 	for (n=153;n < 1000;n++)
+ 	{
+ 		v=n/100;
+ 		v1=n%100;
+ 		vtemp=v1;
+ 		v1=v1/10;
+ 		v2=vtemp%10;
+ 		v=v*v*v;
+ 		v1=v1*v1*v1;
+ 		v2=v2*v2*v2;
+ 		soma=v+v1+v2;
+ 		if (soma == n)
+ 		{
+ 			printf ("\n%d", n);
+		}
+		 	v=0;
+ 			v1=0;
+ 			v2=0;
+	 }
+     return 0;
+}
